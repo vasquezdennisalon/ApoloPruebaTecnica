@@ -47,6 +47,10 @@ Si un usuario existe en coworkers y posee CoworkerContractIds, entonces se consi
     * Axios
     * dotenv
     * cors
+* Frontend
+    * Vue.js 3
+    * Axios
+    * Bootstrap 5
 
 # Funcionalidades Implementadas
 * Backend
@@ -57,6 +61,17 @@ Si un usuario existe en coworkers y posee CoworkerContractIds, entonces se consi
     * CRUD completo
     * Relación Users/Coworkers
     * Endpoint usuarios licenciados
+
+* Frontend
+    * Listado de usuarios
+    * Crear usuarios
+    * Editar usuarios
+    * Eliminar usuarios
+    * Sincronizar información desde Nexudus
+    * Listado usuarios con licencia
+    * Edición de estado activo
+    * Edición de licencias
+    * Interfaz responsive
 
 # Endpoints Locales
 ## Sincronizar Usuarios
@@ -115,3 +130,33 @@ NEXUDUS_PASSWORD=PASS_NEXUDUS
 ```bash
 npm run dev
 ```
+
+## Frontend
+### Instalar dependencias
+```bash
+npm install
+```
+
+### Ejecutar frontend
+```bash
+npm run dev
+```
+
+# Consideraciones Técnicas
+* No todos los usuarios del endpoint /sys/users existen en /spaces/coworkers
+* La relación fue realizada mediante Email
+* Se utilizó lógica tipo LEFT JOIN
+* Los usuarios sin coworker son considerados usuarios sin licencia
+
+# Mejoras Futuras
+* JWT Authentication
+* Swagger/OpenAPI
+* Docker
+* Paginación
+* Filtros/Búsquedas
+* Toast notifications
+* Manejo centralizado de errores
+* Deploy en nube
+
+# Autor
+Denis Francisco Vásquez Flores
