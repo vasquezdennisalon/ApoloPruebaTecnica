@@ -145,7 +145,6 @@ npm run dev
 # Consideraciones Técnicas
 * No todos los usuarios del endpoint /sys/users existen en /spaces/coworkers
 * La relación fue realizada mediante Email
-* Se utilizó lógica tipo LEFT JOIN
 * Los usuarios sin coworker son considerados usuarios sin licencia
 
 # Mejoras Futuras
